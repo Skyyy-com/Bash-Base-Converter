@@ -32,7 +32,7 @@ read val
 
 #choice 5
 
-[ $CHOICE = "5" ] && printf '%x\n' "$((2#$val))"
+[ $CHOICE = "5" ] && echo "obase=16;ibase=2;$val" | bc
 
 #choice 6
 
